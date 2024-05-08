@@ -3,10 +3,10 @@ In this guide, we are going to cover the fundamentals of Python as a programming
 
 To be sure that all that you can find what you want, here is a list of the topics that will be covered. Simply go to what area of the document you would like to visit.
 
-- Introduction/The Starting Point
-- Commenting Code
+- [Introduction/The Starting Point](#introductionthe-starting-point)
+- [Commenting Code](#commenting-code)
 - Data Types
-- Numbers and Mathematical Operators
+- [Numbers and Mathematical Operators](#numbers-and-mathematical-operators)
 - Strings
 - Boolean and Equality Operators
 - Variables
