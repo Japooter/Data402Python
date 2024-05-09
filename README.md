@@ -12,7 +12,7 @@ To be sure that all that you can find what you want, here is a list of the topic
 - Variables
 - Concatenation and String Methods
 - Control Flow
-- Collections, Lists and Dictionaries
+- Lists and Dictionaries
 - Loops (While, For)
 - Functions
 
@@ -133,4 +133,114 @@ The result is the same, an output of `B`. You may be asking what is necessarily 
 ```py
 print(u'\u00A7')
 ```
-produces the output `§`. It was also mentioned that the unicode characters being looked at are not recognised by Python as words or sentences. This means Python can easily work with finding a character within an index. An index is a way to 
+produces the output `§`. It was also mentioned that the unicode characters being looked at are not recognised by Python as words or sentences. This means Python can easily work with finding a character within an index. An index is a way to identify the parts of the string, so for example if you have a word such as `duck`, an index can help show you what is at a certain position. Using the `duck` example, writing as an input `"duck"[2]` would return the letter `c`. Indices start counting at index 0, so `0` here is the letter `d` in the output.
+
+## Boolean and Equality Operators
+
+Booleans are either True or False, as was mentioned. You can also have equality operators deduce what exactly is true and what is false. For example:
+```py
+print(6 == 3)
+```
+outputs `False`. The same can be tested for the inequality signs:
+```py
+print(6 > 3)
+print(6 != 3)
+```
+outputs `True` for both print functions. The equality operators are: `==` for testing equality, `>` for testing greater than, `>=` for testing greater than or equality, `<` for testing less than, `<=` for testing less than or equality and `!=` for testing inequality.
+
+## Variables
+In Python you are more likely to be using variables than using regular data types ("literals"). You can define variables by following the example:
+```py
+variable = value
+```
+The variable should be on the left or you will get an error. You can put anything on the right so long as it is valid without a variable, and you can also have variables interact with other variables:
+```py
+a = 22
+b = 33
+c = a + b
+print(c)
+```
+will output `55`.
+
+## Concatenation and String Methods
+You can combine strings together into one larger string:
+```py
+firstname = "Joe"
+lastname = "Bloggs"
+full_name = firstname + " " + lastname
+print(full_name)
+```
+outputs `Joe Bloggs`. You need to have the space here as Python does not recognise you want a space without it. Escape characters are usable when you need to add items such as quotes or apostrophes into a string. For example:
+```py
+print("The following quote is inside a quote: \" Hello, I am an O\'Neill Brother.\"")
+```
+outputs `The following quote is inside a quote: "Hello, I am `an O'Neill Brother."`. 
+
+String methods are ways to modify a string. For example, with the previous value `firstname`, we can input:
+```py
+print(firstname.upper())
+```
+to get the output `JOE`, all of it in capital letters. This is just one of many possible string methods you can do.
+
+## Control Flow
+`if` statements are able to indicate you should do sometime if the requirements are met. There is also `elif` which gives another requirement for when `if` is not met and finally `else` which is something you can make happen if none of the requirements in `if` (or also `elif` if included) are met.
+
+## Lists and Dictionaries
+Lists and Dictionaries are forms of Collections within Python. Lists are sometimes known as "Arrays" in other languages and simply hold a list of values in an order given by the user. Lists can also include other lists as the values. For example:
+```py
+example_list = [23, 44, 22, 10, 7, 22]
+```
+This is a valid list. Note that lists can include duplicate values and have values other than integers. They can have any value, including strings.
+
+Dictionaries are similar, but they have the requirement of keys for every value in the dictionary. The user can then call a key to get the value:
+```py
+example_dict = {
+    "key1":"value1"
+    "key2":"value2"
+}
+```
+
+## Loops (While, For)
+Loops are ways to have a piece of code repeat until a certain condition is met, to save you duplicating code over and over again. For a For loop example:
+```py
+For i in "values":
+    print(i)
+```
+outputs:
+```
+v
+a
+l
+u
+e
+s
+```
+This loop continues going until `i` moves through all of the items in the string `"values"`.
+
+While loops are organised differently:
+```py
+i = 0
+while i < 6:
+    print(i)
+    i += 1
+```
+Here we have the value of i increment by 1 each time until the loop has happened for i = 5. Afer this, the while loop stops. The output is:
+```
+0
+1
+2
+3
+4
+5
+```
+
+## Functions
+Functions are inputs you can type such as the print function we have seen a lot of, but you can also define your own functions which you can then call:
+```py
+def test_func(argument1, argument2, etc.):
+    sum = argument1 + argument2
+    print(sum)
+
+test_func(41, 4)
+```
+which for the example above outputs `45`. Keep in mind though, functions don't need arguments. You can have as many as you want or none at all, so long as the function itself is logically fine.
