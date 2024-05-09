@@ -121,4 +121,16 @@ You should hopefully be familiar with + as the operator for addition, - as the o
 
 What strings entail we have already covered, but there is more to know about strings. We will cover some of that information here.
 
-Every character in a string is
+Every character in a string is usually what is known as a "Unicode character", and Python only ever sees this as the case for strings. What this means is Python cannot distinguish what is a word or a number for a string, it just works with what unicode characters are in the string and does not make sense of any patterns, the only thing it will do is ensure that the string is printed in the order requested (so if I wanted to print the work `"duck"`, it will always do this. It is also important to know that every unicode character has another way to write them, which is more accurate to the name "unicode". For example, let's say we want to print the letter `'B'`. We could just write:
+```py
+print('B')
+```
+*Or*, we could write the following to print it:
+```py
+print(u'\u0042')
+```
+The result is the same, an output of `B`. You may be asking what is necessarily the point of this, but this is actually a great tool for characters you might not usually see on a keyboard! For example, if you are using a QWERTY keyboard from the UK or US, you likely have not seen the "section sign" § on your keyboard. Instead of finding the symbol online, you can just use the code for the character:
+```py
+print(u'\u00A7')
+```
+produces the output `§`. It was also mentioned that the unicode characters being looked at are not recognised by Python as words or sentences. This means Python can easily work with finding a character within an index. An index is a way to 
