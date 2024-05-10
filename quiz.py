@@ -7,21 +7,22 @@ c_count = 0
 d_count = 0
 correct_count = 0
 check = False
-first_answer = input("How do you greet a new co-worker in a work setting? \n"
-                     "A. Welcome them and accidentally call them your boss \n"
-                     "B. \"Yes.\" \n"
-                     "C. Greet them and ensure they are comfortable with their new workplace \n"
-                     "D. Scream excitedly at their face\n")
-first_answer = first_answer.upper()
 while check == False:
-    if first_answer not in ('A', 'B', 'C', 'D'):
-        print("No.")
-        first_answer = input("How do you greet a new co-worker in a work setting? \n"
+    first_answer = input("How do you greet a new co-worker in a work setting? \n"
                          "A. Welcome them and accidentally call them your boss \n"
                          "B. \"Yes.\" \n"
                          "C. Greet them and ensure they are comfortable with their new workplace \n"
                          "D. Scream excitedly at their face\n")
-        first_answer = first_answer.upper()
+    first_answer = first_answer.upper()
+# while check == False:
+    if first_answer not in ('A', 'B', 'C', 'D'):
+        print("No.")
+        # first_answer = input("How do you greet a new co-worker in a work setting? \n"
+        #                  "A. Welcome them and accidentally call them your boss \n"
+        #                  "B. \"Yes.\" \n"
+        #                  "C. Greet them and ensure they are comfortable with their new workplace \n"
+        #                  "D. Scream excitedly at their face\n")
+        # first_answer = first_answer.upper()
 
     else:
         if first_answer == 'C':
@@ -32,21 +33,22 @@ while check == False:
 
 
 check = False
-second_answer = input("Who is the playable character in the classic arcade game Pac-Man? \n(No-one said these were business questions only.)\n"
-                      "A. Pac-Man \n"
-                      "B. Ghost Hunter \n"
-                      "C. Kazuma Kiryu \n"
-                      "D. Super Mario \n")
-second_answer = second_answer.upper()
 while check == False:
+    second_answer = input("Who is the playable character in the classic arcade game Pac-Man? \n(No-one said these were business questions only.)\n"
+                          "A. Pac-Man \n"
+                          "B. Ghost Hunter \n"
+                          "C. Kazuma Kiryu \n"
+                          "D. Super Mario \n")
+    second_answer = second_answer.upper()
+# while check == False:
     if second_answer not in ('A', 'B', 'C', 'D'):
         print("No.")
-        second_answer = input("Who is the playable character in the classic arcade game Pac-Man? \n(No-one said these were business questions only.)\n"
-                             "A. Pac-Man \n"
-                             "B. Ghost Hunter \n"
-                             "C. Kazuma Kiryu \n"
-                             "D. Super Mario \n")
-        second_answer = second_answer.upper()
+        # second_answer = input("Who is the playable character in the classic arcade game Pac-Man? \n(No-one said these were business questions only.)\n"
+        #                      "A. Pac-Man \n"
+        #                      "B. Ghost Hunter \n"
+        #                      "C. Kazuma Kiryu \n"
+        #                      "D. Super Mario \n")
+        # second_answer = second_answer.upper()
 
     else:
         if second_answer == 'A':
@@ -78,7 +80,7 @@ while check == False:
             check = True
         else:
             check = True
-print(correct_count)
+#print(correct_count)
 
 print("Congratulations! You have finished the quiz.\n"
       "Now, let's see how you did!")
@@ -96,5 +98,7 @@ else:
     print("Okaaay, so uh, that was not good. Not good at all. You are seeing this message if you got nothing right.\n"
           "That means you got the co-worker interaction wrong too...I hope you didn\'t pick D.\n"
           "...Please tell me you didn\'t pick D. Oh no....")
+
+print("Your final score is " + str(correct_count) + ". Please consider playing again sometime!")
 
 #def p_ans(p_input, correct):
