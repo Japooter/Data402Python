@@ -7,14 +7,14 @@ To be sure that all that you can find what you want, here is a list of the topic
 - [Commenting Code](#commenting-code)
 - [Data Types](#data-types)
 - [Numbers and Mathematical Operators](#numbers-and-mathematical-operators)
-- Strings
-- Boolean and Equality Operators
-- Variables
-- Concatenation and String Methods
-- Control Flow
-- Lists and Dictionaries
-- Loops (While, For)
-- Functions
+- [Strings](#strings)
+- [Boolean and Equality Operators](#boolean-and-equality-operators)
+- [Variables](#variables)
+- [Concatenation and String Methods](#concatenation-and-string-methods)
+- [Control Flow](#control-flow)
+- [Lists and Dictionaries](#lists-and-dictionaries)
+- [Loops (While, For)](#loops-while-for)
+- [Functions](#functions)
 
 Just remember: Python can be a puzzle. Do not panic if you are stuck, just logically think about all of the information you know!
 
