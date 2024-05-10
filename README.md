@@ -174,7 +174,7 @@ outputs `Joe Bloggs`. You need to have the space here as Python does not recogni
 ```py
 print("The following quote is inside a quote: \" Hello, I am an O\'Neill Brother.\"")
 ```
-outputs `The following quote is inside a quote: "Hello, I am `an O'Neill Brother."`. 
+outputs `The following quote is inside a quote: "Hello, I am an O'Neill Brother."`. 
 
 String methods are ways to modify a string. For example, with the previous value `firstname`, we can input:
 ```py
